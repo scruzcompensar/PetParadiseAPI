@@ -1,0 +1,33 @@
+# Etapa 1: Construcción de la aplicación
+FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
+
+# Directorio de trabajo para la construcción
+WORKDIR /app
+
+# Copiar los archivos del proyecto y restaurar las dependencias
+COPY ["PetParadiseAPI/PetParadiseAPI.csproj", "PetParadiseAPI/"]
+RUN dotnet restore "PetParadiseAPI/PetParadiseAPI.csproj"
+
+# Copiar el resto del código fuente
+COPY . .
+
+# Construir la aplicación
+RUN dotnet build "PetParadiseAPI.csproj" -c Release -o /app/build
+
+# Publicar la aplicación (prepararla para producción)
+RUN dotnet publish "PetParadiseAPI.csproj" -c Release -o /app/publish
+
+# Etapa 2: Imagen final para ejecutar la aplicación
+FROM mcr.microsoft.com/dotnet/aspnet:6.0 AS base
+
+# Establecer el directorio de trabajo
+WORKDIR /app
+
+# Exponer el puerto en el que la aplicación escuchará (el puerto predeterminado de Cloud Run es 8080)
+EXPOSE 8080
+
+# Copiar la aplicación publicada desde la etapa anterior
+COPY --from=build /app/publish .
+
+# Configurar el comando que se ejecutará al iniciar el contenedor
+ENTRYPOINT ["dotnet", "PetParadiseAPI.dll"]
