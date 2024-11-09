@@ -1,0 +1,17 @@
+C:\Universidad\2024-2\Desarrollo Movil\02. Profundización\PetParadiseAPP\PetParadiseAPI.Services\bin\Debug\net8.0\PetParadiseAPI.Services.deps.json
+C:\Universidad\2024-2\Desarrollo Movil\02. Profundización\PetParadiseAPP\PetParadiseAPI.Services\bin\Debug\net8.0\PetParadiseAPI.Services.dll
+C:\Universidad\2024-2\Desarrollo Movil\02. Profundización\PetParadiseAPP\PetParadiseAPI.Services\bin\Debug\net8.0\PetParadiseAPI.Services.pdb
+C:\Universidad\2024-2\Desarrollo Movil\02. Profundización\PetParadiseAPP\PetParadiseAPI.Services\obj\Debug\net8.0\PetParadiseAPI.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Universidad\2024-2\Desarrollo Movil\02. Profundización\PetParadiseAPP\PetParadiseAPI.Services\obj\Debug\net8.0\PetParadiseAPI.Services.AssemblyInfoInputs.cache
+C:\Universidad\2024-2\Desarrollo Movil\02. Profundización\PetParadiseAPP\PetParadiseAPI.Services\obj\Debug\net8.0\PetParadiseAPI.Services.AssemblyInfo.cs
+C:\Universidad\2024-2\Desarrollo Movil\02. Profundización\PetParadiseAPP\PetParadiseAPI.Services\obj\Debug\net8.0\PetParadiseAPI.Services.csproj.CoreCompileInputs.cache
+C:\Universidad\2024-2\Desarrollo Movil\02. Profundización\PetParadiseAPP\PetParadiseAPI.Services\obj\Debug\net8.0\PetParadiseAPI.Services.dll
+C:\Universidad\2024-2\Desarrollo Movil\02. Profundización\PetParadiseAPP\PetParadiseAPI.Services\obj\Debug\net8.0\refint\PetParadiseAPI.Services.dll
+C:\Universidad\2024-2\Desarrollo Movil\02. Profundización\PetParadiseAPP\PetParadiseAPI.Services\obj\Debug\net8.0\PetParadiseAPI.Services.pdb
+C:\Universidad\2024-2\Desarrollo Movil\02. Profundización\PetParadiseAPP\PetParadiseAPI.Services\obj\Debug\net8.0\ref\PetParadiseAPI.Services.dll
+C:\Universidad\2024-2\Desarrollo Movil\02. Profundización\PetParadiseAPP\PetParadiseAPI.Services\bin\Debug\net8.0\PetParadiseAPI.Common.dll
+C:\Universidad\2024-2\Desarrollo Movil\02. Profundización\PetParadiseAPP\PetParadiseAPI.Services\bin\Debug\net8.0\PetParadiseAPI.DataAccess.dll
+C:\Universidad\2024-2\Desarrollo Movil\02. Profundización\PetParadiseAPP\PetParadiseAPI.Services\bin\Debug\net8.0\PetParadiseAPI.Common.pdb
+C:\Universidad\2024-2\Desarrollo Movil\02. Profundización\PetParadiseAPP\PetParadiseAPI.Services\bin\Debug\net8.0\PetParadiseAPI.DataAccess.pdb
+C:\Universidad\2024-2\Desarrollo Movil\02. Profundización\PetParadiseAPP\PetParadiseAPI.Services\obj\Debug\net8.0\PetParadiseAPI.Services.csproj.AssemblyReference.cache
+C:\Universidad\2024-2\Desarrollo Movil\02. Profundización\PetParadiseAPP\PetParadiseAPI.Services\obj\Debug\net8.0\PetParad.06DF8BE2.Up2Date

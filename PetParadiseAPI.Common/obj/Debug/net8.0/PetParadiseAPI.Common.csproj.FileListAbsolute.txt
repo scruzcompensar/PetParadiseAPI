@@ -1,0 +1,11 @@
+C:\Universidad\2024-2\Desarrollo Movil\02. Profundización\PetParadiseAPP\PetParadiseAPI.Common\bin\Debug\net8.0\PetParadiseAPI.Common.deps.json
+C:\Universidad\2024-2\Desarrollo Movil\02. Profundización\PetParadiseAPP\PetParadiseAPI.Common\bin\Debug\net8.0\PetParadiseAPI.Common.dll
+C:\Universidad\2024-2\Desarrollo Movil\02. Profundización\PetParadiseAPP\PetParadiseAPI.Common\bin\Debug\net8.0\PetParadiseAPI.Common.pdb
+C:\Universidad\2024-2\Desarrollo Movil\02. Profundización\PetParadiseAPP\PetParadiseAPI.Common\obj\Debug\net8.0\PetParadiseAPI.Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Universidad\2024-2\Desarrollo Movil\02. Profundización\PetParadiseAPP\PetParadiseAPI.Common\obj\Debug\net8.0\PetParadiseAPI.Common.AssemblyInfoInputs.cache
+C:\Universidad\2024-2\Desarrollo Movil\02. Profundización\PetParadiseAPP\PetParadiseAPI.Common\obj\Debug\net8.0\PetParadiseAPI.Common.AssemblyInfo.cs
+C:\Universidad\2024-2\Desarrollo Movil\02. Profundización\PetParadiseAPP\PetParadiseAPI.Common\obj\Debug\net8.0\PetParadiseAPI.Common.csproj.CoreCompileInputs.cache
+C:\Universidad\2024-2\Desarrollo Movil\02. Profundización\PetParadiseAPP\PetParadiseAPI.Common\obj\Debug\net8.0\PetParadiseAPI.Common.dll
+C:\Universidad\2024-2\Desarrollo Movil\02. Profundización\PetParadiseAPP\PetParadiseAPI.Common\obj\Debug\net8.0\refint\PetParadiseAPI.Common.dll
+C:\Universidad\2024-2\Desarrollo Movil\02. Profundización\PetParadiseAPP\PetParadiseAPI.Common\obj\Debug\net8.0\PetParadiseAPI.Common.pdb
+C:\Universidad\2024-2\Desarrollo Movil\02. Profundización\PetParadiseAPP\PetParadiseAPI.Common\obj\Debug\net8.0\ref\PetParadiseAPI.Common.dll
