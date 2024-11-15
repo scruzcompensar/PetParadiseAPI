@@ -31,7 +31,7 @@ builder.Services.AddCors(options =>
 
 var app = builder.Build();
 
-// Configurar el puerto usando la variable de entorno "PORT"
+// Configurar el puerto dinámico para Google Cloud Run
 var port = Environment.GetEnvironmentVariable("PORT") ?? "8080";
 app.Urls.Add($"http://0.0.0.0:{port}");
 

@@ -1,27 +1,31 @@
-# Etapa de construcción
-FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
-
-# Directorio de trabajo dentro del contenedor
+# Etapa de construcción: usa el SDK de .NET 8.0
+FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build-env
 WORKDIR /app
 
-# Copiar los archivos del proyecto y restaurar las dependencias
-COPY *.csproj ./
-RUN dotnet restore
+# Copiar el archivo de solución y los proyectos
+COPY PetParadiseAPI.sln ./
+COPY PetParadiseAPI/PetParadiseAPI.csproj ./PetParadiseAPI/
+COPY PetParadiseAPI.DataAccess/PetParadiseAPI.DataAccess.csproj ./PetParadiseAPI.DataAccess/
+COPY PetParadiseAPI.Services/PetParadiseAPI.Services.csproj ./PetParadiseAPI.Services/
+COPY PetParadiseAPI.Common/PetParadiseAPI.Common.csproj ./PetParadiseAPI.Common/
 
-# Copiar el resto de los archivos del código fuente
+# Restaurar dependencias de todos los proyectos
+RUN dotnet restore PetParadiseAPI.sln
+
+# Copiar todo el resto de los archivos y compilar
 COPY . ./
+RUN dotnet publish PetParadiseAPI/PetParadiseAPI.csproj -c Release -o out
 
-# Compilar la aplicación
-RUN dotnet publish -c Release -o out
-
-# Etapa de ejecución
-FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base
-
+# Etapa de ejecución: usa el runtime de .NET 8.0
+FROM mcr.microsoft.com/dotnet/aspnet:8.0
 WORKDIR /app
+COPY --from=build-env /app/out .
+
+# Establecer el entorno de producción
+ENV ASPNETCORE_ENVIRONMENT Production
+
+# Exponer el puerto 8080 (o el puerto asignado por Cloud Run)
 EXPOSE 8080
 
-# Copiar el archivo publicado desde la etapa anterior
-COPY --from=build /app/out .
-
-# Definir el comando para ejecutar la aplicación
+# Ejecutar la aplicación
 ENTRYPOINT ["dotnet", "PetParadiseAPI.dll"]
